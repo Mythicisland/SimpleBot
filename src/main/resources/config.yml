@@ -1,5 +1,26 @@
-email: "example@example.com"
-password: "yourultrasecretpassword"
+# Set up your minecraft java acc
+bot:
+  account:
+    type: "microsoft"
+    email: "deine-microsoft-email@outlook.com"  # Deine Microsoft-Email
+    password: "dein-microsoft-passwort"
 
-## en or de
-lang: en
+  # Bot behavior
+  behavior:
+    auto-connect-on-startup: true
+    auto-reconnect: true
+    reconnect-delay-seconds: 30
+    max-reconnect-attempts: 10
+    idle-timeout-minutes: 60
+
+  # Advanced
+  advanced:
+    keep-alive-interval: 20
+    connection-timeout: 10
+    packet-delay-ms: 50
+
+# General settings
+plugin:
+  language: "en-us" # en-us, de-de
+  debug-mode: true
+  log-packets: true

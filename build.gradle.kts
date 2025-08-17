@@ -35,8 +35,12 @@ dependencies {
     implementation("com.mojang:authlib:6.0.54")
     implementation("net.raphimc:MinecraftAuth:4.1.1")
     implementation("io.netty:netty-all:4.1.115.Final")
-    implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("org.yaml:snakeyaml:2.2")
+    implementation("org.apache.commons:commons-lang3:3.14.0")
+    implementation("com.github.ben-manes.caffeine:caffeine:3.1.8")
+    implementation("org.bouncycastle:bcprov-jdk18on:1.77")
+    implementation("commons-codec:commons-codec:1.16.0")
 }
 
 java {
@@ -58,7 +62,7 @@ tasks {
         val props = mapOf(
             "name" to project.name,
             "version" to project.version,
-            "description" to project.description,
+            "description" to "Minecraft Bot Plugin",
             "apiVersion" to "1.21"
         )
         inputs.properties(props)
@@ -68,13 +72,20 @@ tasks {
     }
 
     shadowJar {
-        relocate("com.google.gson", "com.mythicisland.island.bot.libs.gson")
-        relocate("okhttp3", "com.mythicisland.island.bot.libs.okhttp")
+        relocate("com.google.gson", "com.mythicisland.bot.libs.gson")
+        relocate("okhttp3", "com.mythicisland.bot.libs.okhttp")
+        relocate("org.apache.commons", "com.mythicisland.bot.libs.commons")
+        relocate("com.github.benmanes.caffeine", "com.mythicisland.bot.libs.caffeine")
+        relocate("org.bouncycastle", "com.mythicisland.bot.libs.bouncycastle")
+        relocate("org.apache.commons.codec", "com.mythicisland.bot.libs.codec")
+
         archiveClassifier.set("")
+        dependencies {
+            exclude(dependency("org.slf4j:.*"))
+        }
     }
 
     build {
         dependsOn(shadowJar)
     }
-
 }

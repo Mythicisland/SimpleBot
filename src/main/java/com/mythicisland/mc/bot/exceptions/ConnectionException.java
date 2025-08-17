@@ -1,5 +1,5 @@
 /*
- * This file is part of Simple Bot, licensed under the MIT License.
+ * This file is part of Simple Minecraft Bot, licensed under the MIT License.
  *
  * Copyright (c) 2025 Mythic Island
  *
@@ -21,10 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.mythicisland.bot;
+package com.mythicisland.mc.bot.exceptions;
 
-import org.bukkit.plugin.java.JavaPlugin;
+public class ConnectionException extends BotException {
 
-public class Main extends JavaPlugin {
+    public ConnectionException(String message) {
+        super(message, "CONNECTION_FAILED");
+    }
 
+    public ConnectionException(String message, Throwable cause) {
+        super(message, cause, "CONNECTION_FAILED");
+    }
 }

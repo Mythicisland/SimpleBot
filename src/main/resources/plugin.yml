@@ -1,8 +1,26 @@
 name: Mc-Bot
 version: 1.0.0
-main: com.mythicisland.bot.Main
+main: com.mythicisland.mc.bot.Main
 description: A Simple Paper for a Minecraft Bot
 author: MythicIsland
 contributors: [xXJanisXx]
 website: https://github.com/MythicIsland/SimpleBot
 api-version: '1.21'
+
+commands:
+  bot:
+    description: Bot management commands
+    usage: /bot <connect|disconnect|status|reconnect|reload>
+    permission: minecraftbot.use
+    aliases: [minecraftbot, mcbot, simplebot]
+
+permissions:
+  minecraftbot.use:
+    description: Allows using basic bot commands
+    default: op
+  minecraftbot.admin:
+    description: Allows using admin bot commands
+    default: op
+  minecraftbot.reload:
+    description: Allows reloading the bot configuration
+    default: op
