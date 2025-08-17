@@ -24,10 +24,10 @@ hs_err_pid*
 replay_pid*
 
 ### Gradle ###
+gradle
 .gradle/
 build/
 out/
-!gradle/wrapper/gradle-wrapper.jar
 **/build/
 **/out/
 !gradle-wrapper.jar
