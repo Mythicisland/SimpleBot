@@ -1,0 +1,7 @@
+{
+  "command.reload.started": "Lade Plugin neu...",
+  "command.reload.completed": "Simple Bot wurde erfolgreich neu geladen!",
+  "command.bot.connection.started": "Verbinde den bot...",
+  "command.bot.connection.successfully": "Der Bot hat sich erfolgreich verbunden",
+  "command.bot.connection.failed": "Fehler beim verbinden vom Bot"
+}
