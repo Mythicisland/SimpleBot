@@ -1,4 +1,4 @@
-#Simple Bot 
+# Simple Bot 
 
 [![Paper](https://img.shields.io/badge/Paper-1.21-blue.svg)](https://papermc.io/)
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.java.net/)
