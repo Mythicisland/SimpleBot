@@ -1,0 +1,8 @@
+name: Mc-Bot
+version: 1.0.0
+main: com.mythicisland.bot.Main
+description: A Simple Paper for a Minecraft Bot
+author: MythicIsland
+contributors: [xXJanisXx]
+website: https://github.com/MythicIsland/SimpleBot
+api-version: '1.21'
