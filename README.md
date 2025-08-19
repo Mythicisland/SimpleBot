@@ -7,6 +7,8 @@
 
 A powerful Paper plugin that allows you to connect genuine Minecraft accounts as bots directly to your server.
 
+## To Time only Mojang Auth Works good
+
 ### Development Setup
 
 1. **Clone** the repository
