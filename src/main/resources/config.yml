@@ -3,7 +3,7 @@ bot:
   account:
     type: "microsoft"
     email: "your-email@gmail.com"
-    password: "dein-microsoft-passwort"
+    password: "your-password"
 
   # Bot behavior
   behavior:
