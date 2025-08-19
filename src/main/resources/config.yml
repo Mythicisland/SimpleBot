@@ -2,7 +2,7 @@
 bot:
   account:
     type: "microsoft"
-    email: "deine-microsoft-email@outlook.com"  # Deine Microsoft-Email
+    email: "your-email@gmail.com"
     password: "dein-microsoft-passwort"
 
   # Bot behavior
